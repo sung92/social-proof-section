@@ -1,0 +1,64 @@
+@use "../abstracts/functions" as f;
+
+/**************************/
+/* INTRO */
+/**************************/
+.c-intro-heading-wrapper {
+    margin-top: f.rem(50px);
+    text-align: center;
+}
+
+.c-intro-primary-heading {
+    font-size: f.rem(40px);
+    letter-spacing: -1px;
+    line-height: normal;
+    color: var(--color-verydark-magenta);
+}
+
+.c-intro-desc {
+    margin-top: f.rem(20px);
+    font-size: f.rem(19px);
+    font-weight: 400;
+    
+    letter-spacing: -1px;
+    line-height: f.rem(24px);
+    text-wrap: pretty;
+    color: var(--color-verygreyish-magenta);
+}
+
+/* RATINGS */
+/**************************/
+.c-intro-ratings {
+    list-style-type: none;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: f.rem(15px);
+    
+}
+
+.c-intro-rating {
+    background-color: var(--color-lightgreyish-magenta);
+    padding: f.rem(10px) f.rem(20px);
+    border-radius: 9px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: f.rem(12px);
+}
+
+.c-intro-rating__stars {
+    display: flex;
+    justify-content: center;
+    gap: f.rem(10px);
+}
+
+.c-intro-rating__desc {
+    font-size: f.rem(17px);
+    font-weight: 700;
+    color: var(--color-verydark-magenta);
+}

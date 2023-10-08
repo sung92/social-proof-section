@@ -1,0 +1,68 @@
+@use "../abstracts/functions" as f;
+
+/**************************/
+/* TESTIMONIALS */
+/**************************/
+
+.c-testimonials-wrap {
+    margin-top: f.rem(50px);
+    list-style-type: none;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(25px);
+}
+
+.c-testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(20px);
+
+    padding: f.rem(25px);
+    color: var(--color-white);
+    background-color: var(--color-verydark-magenta);
+}
+
+/* TESTIMONY BUYER */
+/**************************/
+.c-testimonial__buyer {
+    display: flex;
+    gap: f.rem(25px);
+}
+
+/* BUYER IMG */
+.c-testimonial__img {
+    height: f.rem(40px);
+    border-radius: 100%;
+}
+
+.c-testimonial-stack {
+    line-height: f.rem(18px);
+}
+
+/* BUYER NAME */
+.c-testimonial__name {
+
+    font-size: f.rem(17px);
+    font-weight: 700;
+}
+
+.c-testimonial-stack span {
+    font-weight: 400;
+    color: var(--color-soft-pink);
+}
+
+.c-testimonial__desc {
+    font-weight: 500;
+}
+
+/* TESTIMONY QUOTE */
+/**************************/
+.c-testimonial__desc {
+    font-weight: 400;
+}
+
+@media (width >= 50em) {
+
+}
