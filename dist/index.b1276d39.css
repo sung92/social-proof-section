@@ -87,8 +87,10 @@ s:after {
 }
 
 body {
-  background-color: var(--color-light-gray);
-  background-image: url("bg-pattern-bottom-mobile.976631e2.svg");
+  background-color: var(--color-white);
+  background-image: url("bg-pattern-bottom-mobile.976631e2.svg"), url("bg-pattern-bottom-mobile.976631e2.svg");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
   place-content: center;
   height: 100%;
   padding: 1.25rem;
