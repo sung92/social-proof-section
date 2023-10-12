@@ -100,6 +100,24 @@ body {
   display: grid;
 }
 
+main {
+  display: grid;
+}
+
+@media (width > 43.75em) {
+  body {
+    background-image: url("bg-pattern-top-desktop.7ad00b89.svg"), url("bg-pattern-bottom-desktop.de62f61e.svg");
+    background-position: 0 0, 100% 100%;
+    background-size: auto;
+  }
+
+  main {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90rem;
+  }
+}
+
 .c-testimonials-wrap {
   flex-direction: column;
   gap: 1.5625rem;
@@ -112,6 +130,7 @@ body {
 .c-testimonial {
   color: var(--color-white);
   background-color: var(--color-verydark-magenta);
+  border-radius: 9px;
   flex-direction: column;
   gap: 1.25rem;
   padding: 1.5625rem;
@@ -143,7 +162,44 @@ body {
 }
 
 .c-testimonial__desc {
+  margin-top: 1.25rem;
   font-weight: 400;
+}
+
+@media (width > 43.75em) {
+  .c-testimonials {
+    grid-column: 1 / -1;
+  }
+
+  .c-testimonials-wrap {
+    flex-direction: row;
+    gap: 1.5625rem;
+    display: flex;
+  }
+
+  .c-testimonial {
+    flex-direction: row;
+    flex-basis: auto;
+    max-width: 21.875rem;
+    height: auto;
+    padding: 2.1875rem;
+  }
+
+  .c-testimonial:first-child {
+    align-self: start;
+  }
+
+  .c-testimonial:nth-child(2) {
+    align-self: center;
+  }
+
+  .c-testimonial:nth-child(3) {
+    align-self: end;
+  }
+
+  .c-testimonial__desc {
+    font-size: 1.0625rem;
+  }
 }
 
 .c-intro-heading-wrapper {
@@ -166,6 +222,28 @@ body {
   font-size: 1.1875rem;
   font-weight: 400;
   line-height: 1.5rem;
+}
+
+@media (width > 43.75em) {
+  .c-intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    display: grid;
+  }
+
+  .c-intro-heading-wrapper {
+    text-align: left;
+    max-width: 26.25rem;
+  }
+
+  .c-intro-primary-heading {
+    text-wrap: pretty;
+    font-size: 3.5rem;
+  }
+
+  .c-intro-desc {
+    text-wrap: pretty;
+  }
 }
 
 .c-intro-ratings {
@@ -197,6 +275,31 @@ body {
   color: var(--color-verydark-magenta);
   font-size: 1.0625rem;
   font-weight: 700;
+}
+
+@media (width > 43.75em) {
+  .c-intro-ratings {
+    max-width: 33.75rem;
+  }
+
+  .c-intro-rating {
+    flex-direction: row;
+    gap: 2.5rem;
+    max-width: 27.8125rem;
+    padding: .9375rem 1.875rem;
+  }
+
+  .c-intro-rating:nth-child(2) {
+    align-self: center;
+  }
+
+  .c-intro-rating:nth-child(3) {
+    align-self: end;
+  }
+
+  .c-intro-rating img {
+    height: 1rem;
+  }
 }
 
 /*# sourceMappingURL=index.b1276d39.css.map */

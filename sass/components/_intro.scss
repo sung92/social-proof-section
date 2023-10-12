@@ -26,39 +26,26 @@
     color: var(--color-verygreyish-magenta);
 }
 
-/* RATINGS */
-/**************************/
-.c-intro-ratings {
-    list-style-type: none;
-    padding-left: 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    gap: f.rem(15px);
-    
-}
 
-.c-intro-rating {
-    background-color: var(--color-lightgreyish-magenta);
-    padding: f.rem(10px) f.rem(20px);
-    border-radius: 9px;
+@media (width > 43.75em) {
+    .c-intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: f.rem(16px);
+    }
 
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: f.rem(12px);
-}
+    .c-intro-heading-wrapper {
+        max-width: f.rem(420px);
+        text-align: left;
+    }
 
-.c-intro-rating__stars {
-    display: flex;
-    justify-content: center;
-    gap: f.rem(10px);
-}
+    .c-intro-primary-heading {
+        text-wrap: pretty;
+        font-size: f.rem(56px);
+    }
 
-.c-intro-rating__desc {
-    font-size: f.rem(17px);
-    font-weight: 700;
-    color: var(--color-verydark-magenta);
+    .c-intro-desc {
+        text-wrap: pretty;
+    }
 }

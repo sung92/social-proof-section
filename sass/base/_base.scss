@@ -55,3 +55,27 @@ body {
     display: grid;
     place-content: center;
 }
+
+/**************************/
+/* Main */
+/**************************/
+
+main {
+  display: grid;
+  
+}
+
+
+@media (width > 43.75em) {
+  body {
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-size: auto;
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: f.rem(1440px);
+  }
+}

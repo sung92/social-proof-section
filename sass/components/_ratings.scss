@@ -1,0 +1,66 @@
+@use "../abstracts/functions" as f;
+
+/**************************/
+/* RATINGS */
+/**************************/
+.c-intro-ratings {
+    list-style-type: none;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: f.rem(15px);
+    
+}
+
+.c-intro-rating {
+    background-color: var(--color-lightgreyish-magenta);
+    padding: f.rem(10px) f.rem(20px);
+    border-radius: 9px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: f.rem(12px);
+}
+
+.c-intro-rating__stars {
+    display: flex;
+    justify-content: center;
+    gap: f.rem(10px);
+}
+
+.c-intro-rating__desc {
+    font-size: f.rem(17px);
+    font-weight: 700;
+    color: var(--color-verydark-magenta);
+}
+
+@media (width > 43.75em) {
+    .c-intro-ratings {
+        max-width: f.rem(540px);
+    }
+
+    .c-intro-rating {
+        max-width: f.rem(445px);
+        padding: f.rem(15px) f.rem(30px);
+
+        flex-direction: row;
+        gap: f.rem(40px);
+
+        &:nth-child(2) {
+            align-self: center;
+        }
+
+        &:nth-child(3) {
+            align-self: end;
+        }
+    }
+
+    .c-intro-rating img {
+        height: f.rem(16px);
+    }
+
+}
