@@ -9,14 +9,12 @@
     list-style-type: none;
     padding-left: 0;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: f.rem(25px);
 }
 
 .c-testimonial {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: f.rem(20px);
     border-radius: 9px;
 
@@ -70,25 +68,48 @@
         grid-column: 1 / -1;
     }
 
+    // .c-testimonials-wrap {
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: start;
+    //     gap: f.rem(25px);
+    // }
+
+    // .c-testimonial {
+    //     flex-direction: row;
+    //     flex-basis: auto;
+    //     max-width: f.rem(400px);
+    //     padding: f.rem(35px);
+
+    //     // &:nth-child(1) {
+    //     //     align-self: start;
+    //     // }
+
+    //     &:nth-child(2) {
+    //         margin-top: f.rem(32px);
+    //     }
+
+    //     &:nth-child(3) {
+    //         margin-top: f.rem(64px);
+    //     }
+    // }
+
     .c-testimonials-wrap {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         align-items: start;
         gap: f.rem(25px);
     }
 
     .c-testimonial {
-        flex-direction: row;
-        flex-basis: auto;
-        max-width: f.rem(400px);
         padding: f.rem(35px);
 
-        // &:nth-child(1) {
-        //     align-self: start;
-        // }
+        &:nth-child(1) {
+            align-self: start;
+        }
 
         &:nth-child(2) {
-            margin-top: f.rem(32px);
+            align-self: center;
         }
 
         &:nth-child(3) {

@@ -119,22 +119,20 @@ main {
 }
 
 .c-testimonials-wrap {
-  flex-direction: column;
   gap: 1.5625rem;
   margin-top: 3.125rem;
   padding-left: 0;
   list-style-type: none;
-  display: flex;
+  display: grid;
 }
 
 .c-testimonial {
   color: var(--color-white);
   background-color: var(--color-verydark-magenta);
   border-radius: 9px;
-  flex-direction: column;
   gap: 1.25rem;
   padding: 1.5625rem;
-  display: flex;
+  display: grid;
 }
 
 .c-testimonial__buyer {
@@ -172,21 +170,22 @@ main {
   }
 
   .c-testimonials-wrap {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
     align-items: start;
     gap: 1.5625rem;
-    display: flex;
+    display: grid;
   }
 
   .c-testimonial {
-    flex-direction: row;
-    flex-basis: auto;
-    max-width: 25rem;
     padding: 2.1875rem;
   }
 
+  .c-testimonial:first-child {
+    align-self: start;
+  }
+
   .c-testimonial:nth-child(2) {
-    margin-top: 2rem;
+    align-self: center;
   }
 
   .c-testimonial:nth-child(3) {
