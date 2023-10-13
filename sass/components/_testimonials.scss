@@ -71,29 +71,28 @@
     }
 
     .c-testimonials-wrap {
-
         display: flex;
         flex-direction: row;
+        align-items: start;
         gap: f.rem(25px);
     }
 
     .c-testimonial {
         flex-direction: row;
-        height: auto;
         flex-basis: auto;
-        max-width: f.rem(350px);
+        max-width: f.rem(450px);
         padding: f.rem(35px);
 
-        &:nth-child(1) {
-            align-self: start;
-        }
+        // &:nth-child(1) {
+        //     align-self: start;
+        // }
 
         &:nth-child(2) {
-            align-self: center;
+            margin-top: f.rem(32px);
         }
 
         &:nth-child(3) {
-            align-self: end;
+            margin-top: f.rem(64px);
         }
     }
 

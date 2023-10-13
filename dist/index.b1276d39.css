@@ -173,6 +173,7 @@ main {
 
   .c-testimonials-wrap {
     flex-direction: row;
+    align-items: start;
     gap: 1.5625rem;
     display: flex;
   }
@@ -180,21 +181,16 @@ main {
   .c-testimonial {
     flex-direction: row;
     flex-basis: auto;
-    max-width: 21.875rem;
-    height: auto;
+    max-width: 28.125rem;
     padding: 2.1875rem;
   }
 
-  .c-testimonial:first-child {
-    align-self: start;
-  }
-
   .c-testimonial:nth-child(2) {
-    align-self: center;
+    margin-top: 2rem;
   }
 
   .c-testimonial:nth-child(3) {
-    align-self: end;
+    margin-top: 4rem;
   }
 
   .c-testimonial__desc {
