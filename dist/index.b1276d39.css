@@ -181,7 +181,7 @@ main {
   .c-testimonial {
     flex-direction: row;
     flex-basis: auto;
-    max-width: 21.875rem;
+    max-width: 25rem;
     padding: 2.1875rem;
   }
 
