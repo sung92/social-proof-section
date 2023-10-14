@@ -101,6 +101,9 @@ body {
 }
 
 main {
+  grid-template-areas: "intro"
+                       "ratings"
+                       "testimonials";
   display: grid;
 }
 
@@ -112,13 +115,16 @@ main {
   }
 
   main {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "intro ratings"
+                         "testimonials testimonials";
     max-width: 90rem;
   }
 }
 
 .c-testimonials-wrap {
+  grid-template-areas: "t1"
+                       "t2"
+                       "t3";
   gap: 1.5625rem;
   margin-top: 3.125rem;
   padding-left: 0;
@@ -133,6 +139,18 @@ main {
   gap: 1.25rem;
   padding: 1.5625rem;
   display: grid;
+}
+
+.c-testimonial:first-child {
+  grid-area: t1;
+}
+
+.c-testimonial:nth-child(2) {
+  grid-area: t2;
+}
+
+.c-testimonial:nth-child(3) {
+  grid-area: t3;
 }
 
 .c-testimonial__buyer {
@@ -170,7 +188,13 @@ main {
   }
 
   .c-testimonials-wrap {
+    grid-template-rows: .5rem .5rem 1fr .5rem .5rem;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "t1 . ."
+                         "t1 t2 ."
+                         "t1 t2 t3"
+                         ". t2 t3"
+                         ". . t3";
     align-items: start;
     gap: 1.5625rem;
     display: grid;
@@ -178,18 +202,6 @@ main {
 
   .c-testimonial {
     padding: 2.1875rem;
-  }
-
-  .c-testimonial:first-child {
-    align-self: start;
-  }
-
-  .c-testimonial:nth-child(2) {
-    align-self: center;
-  }
-
-  .c-testimonial:nth-child(3) {
-    margin-top: 4rem;
   }
 
   .c-testimonial__desc {

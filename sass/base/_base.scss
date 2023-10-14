@@ -62,9 +62,12 @@ body {
 
 main {
   display: grid;
+  grid-template-areas: 
+  'intro'
+  'ratings'
+  'testimonials';
   
 }
-
 
 @media (width > 43.75em) {
   body {
@@ -74,8 +77,13 @@ main {
   }
 
   main {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    'intro ratings'
+    'testimonials testimonials';
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
     max-width: f.rem(1440px);
   }
+
+  
 }
